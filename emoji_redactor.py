@@ -7,10 +7,10 @@ def emoji_add(text):
         response.append(word)
         for spell in emojies:
             if word.startswith(spell):
-                response.append(emojies[spell])
+                response.append(emojies[spell] * 3)
     return response
 
 
 if __name__ == '__main__':
-    text = input('Введите текст: ')
+    text = 'инопланетянин'
     print(*emoji_add(text))
